@@ -82,5 +82,9 @@ int main()
     {
         cerr << "Register Error " << e.what() << endl;
     }
+    catch (const runtime_error &e)
+    {
+        cerr << "Wrong command, " << e.what() << endl;
+    }
     return 0;
 }
